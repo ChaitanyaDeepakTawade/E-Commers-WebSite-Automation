@@ -33,7 +33,7 @@ public class HelperClass {
         driver.get(prop.getProperty("url"));
     }
 
-    @AfterClass
+//    @AfterClass
     public void tearDown() {
         if (driver != null) {
             driver.quit();

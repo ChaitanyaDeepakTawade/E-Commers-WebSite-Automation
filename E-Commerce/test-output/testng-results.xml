@@ -2,23 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-14T14:57:07 IST" name="Default suite" finished-at="2025-06-14T14:57:12 IST" duration-ms="5530">
+  <suite started-at="2025-06-17T20:09:23 IST" name="Default suite" finished-at="2025-06-17T20:09:32 IST" duration-ms="8840">
     <groups>
     </groups>
-    <test started-at="2025-06-14T14:57:07 IST" name="Default test" finished-at="2025-06-14T14:57:12 IST" duration-ms="5530">
+    <test started-at="2025-06-17T20:09:23 IST" name="Default test" finished-at="2025-06-17T20:09:32 IST" duration-ms="8840">
       <class name="com.E_Commerce.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@269f4bad]" started-at="2025-06-14T14:57:07 IST" name="setUp" finished-at="2025-06-14T14:57:12 IST" duration-ms="5108" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@38be305c]" started-at="2025-06-17T20:09:23 IST" name="setUp" finished-at="2025-06-17T20:09:30 IST" duration-ms="6800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="login()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@269f4bad]" started-at="2025-06-14T14:57:12 IST" name="login" finished-at="2025-06-14T14:57:12 IST" duration-ms="154" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@38be305c]" started-at="2025-06-17T20:09:30 IST" name="login" finished-at="2025-06-17T20:09:32 IST" duration-ms="1983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@269f4bad]" started-at="2025-06-14T14:57:12 IST" name="tearDown" finished-at="2025-06-14T14:57:12 IST" duration-ms="232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.E_Commerce.tests.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

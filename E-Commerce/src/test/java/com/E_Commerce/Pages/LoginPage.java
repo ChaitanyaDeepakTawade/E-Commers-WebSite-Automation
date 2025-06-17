@@ -8,6 +8,8 @@ public class LoginPage {
 
     private By UserID = By.name("Email");
     private By Password = By.name("Password");
+    private By LoginURL = By.linkText("Log in");
+    private By LoginBtn = By.xpath("//input[@value='Log in']");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -15,7 +17,9 @@ public class LoginPage {
 
 
 	public void login(String UserID, String Password) {
+		driver.findElement(LoginURL).click();
         driver.findElement(this.UserID).sendKeys(UserID);
         driver.findElement(this.Password).sendKeys(Password);
+        driver.findElement(LoginBtn).click();
     }
 }
