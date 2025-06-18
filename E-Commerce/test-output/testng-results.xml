@@ -1,21 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-17T20:09:23 IST" name="Default suite" finished-at="2025-06-17T20:09:32 IST" duration-ms="8840">
+  <suite started-at="2025-06-18T20:08:39 IST" name="Suite" finished-at="2025-06-18T20:08:55 IST" duration-ms="15887">
     <groups>
     </groups>
-    <test started-at="2025-06-17T20:09:23 IST" name="Default test" finished-at="2025-06-17T20:09:32 IST" duration-ms="8840">
+    <test started-at="2025-06-18T20:08:39 IST" name="Test" finished-at="2025-06-18T20:08:55 IST" duration-ms="15887">
       <class name="com.E_Commerce.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@38be305c]" started-at="2025-06-17T20:09:23 IST" name="setUp" finished-at="2025-06-17T20:09:30 IST" duration-ms="6800" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@70d2e40b]" started-at="2025-06-18T20:08:48 IST" name="setUp" finished-at="2025-06-18T20:08:54 IST" duration-ms="5600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="login()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@38be305c]" started-at="2025-06-17T20:09:30 IST" name="login" finished-at="2025-06-17T20:09:32 IST" duration-ms="1983" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@70d2e40b]" started-at="2025-06-18T20:08:54 IST" name="login" finished-at="2025-06-18T20:08:55 IST" duration-ms="1222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- com.E_Commerce.tests.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.E_Commerce.tests.RegistrationPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.E_Commerce.tests.RegistrationPageTest@2555fff0]" started-at="2025-06-18T20:08:39 IST" name="setUp" finished-at="2025-06-18T20:08:45 IST" duration-ms="5793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Register(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.E_Commerce.tests.RegistrationPageTest@2555fff0]" started-at="2025-06-18T20:08:46 IST" name="Register" data-provider="RegistrationData" finished-at="2025-06-18T20:08:48 IST" duration-ms="2462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chaitanya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tawade]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chaitanyatawade@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Abc@123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Abc@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+      </class> <!-- com.E_Commerce.tests.RegistrationPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

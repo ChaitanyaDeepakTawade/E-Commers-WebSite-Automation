@@ -5,6 +5,7 @@
     <classes>
       <class name="com.E_Commerce.Utils.HelperClass"/>
       <class name="com.E_Commerce.AppTest"/>
+      <class name="com.E_Commerce.tests.RegistrationPageTest"/>
       <class name="com.E_Commerce.tests.LoginPageTest"/>
     </classes>
   </test> <!-- Test -->

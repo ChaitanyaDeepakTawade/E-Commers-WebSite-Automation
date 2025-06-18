@@ -16,6 +16,7 @@ public class RegistrationPage{
 	private By Email = By.id("Email");
 	private By Password = By.id("Password");
 	private By ConfirmPassword = By.id("ConfirmPassword");
+	private By registerBtn = By.id("register-button");
 	
 	public RegistrationPage(WebDriver driver){
 		this.driver=driver;
@@ -30,6 +31,8 @@ public class RegistrationPage{
 		driver.findElement(this.Email).sendKeys(Email);
 		driver.findElement(this.Password).sendKeys(Password);
 		driver.findElement(this.ConfirmPassword).sendKeys(ConfirmPassword);
+		driver.findElement(registerBtn).click();
+		
 	}
 	
 	
