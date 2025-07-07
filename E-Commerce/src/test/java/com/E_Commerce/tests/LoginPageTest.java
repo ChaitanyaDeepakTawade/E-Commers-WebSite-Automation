@@ -20,10 +20,11 @@ public class LoginPageTest extends HelperClass {
     public void login() throws FileNotFoundException, IOException {
 		
 		LoginPage Login = new LoginPage(driver);
+		
 		prop = new Properties();
 	    prop.load(new FileInputStream("src\\test\\ resources\\config.properties"));
-
-		Login.login(prop.getProperty("UserId"),prop.getProperty("Password"));
+       
+		Login.login( uniqueEmail ,prop.getProperty("Password") );
 
         String title = driver.getTitle();
         

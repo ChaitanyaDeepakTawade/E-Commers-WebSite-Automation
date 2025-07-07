@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T20:08:39 IST" name="Suite" finished-at="2025-06-18T20:08:55 IST" duration-ms="15887">
+  <suite started-at="2025-07-07T20:41:20 IST" name="Suite" finished-at="2025-07-07T20:41:44 IST" duration-ms="24130">
     <groups>
     </groups>
-    <test started-at="2025-06-18T20:08:39 IST" name="Test" finished-at="2025-06-18T20:08:55 IST" duration-ms="15887">
+    <test started-at="2025-07-07T20:41:20 IST" name="Test" finished-at="2025-07-07T20:41:44 IST" duration-ms="24130">
       <class name="com.E_Commerce.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@70d2e40b]" started-at="2025-06-18T20:08:48 IST" name="setUp" finished-at="2025-06-18T20:08:54 IST" duration-ms="5600" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@1e11bc55]" started-at="2025-07-07T20:41:31 IST" name="setUp" finished-at="2025-07-07T20:41:43 IST" duration-ms="11738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="login()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@70d2e40b]" started-at="2025-06-18T20:08:54 IST" name="login" finished-at="2025-06-18T20:08:55 IST" duration-ms="1222" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.E_Commerce.tests.LoginPageTest@1e11bc55]" started-at="2025-07-07T20:41:43 IST" name="login" finished-at="2025-07-07T20:41:44 IST" duration-ms="1150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- com.E_Commerce.tests.LoginPageTest -->
       <class name="com.E_Commerce.tests.RegistrationPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.E_Commerce.tests.RegistrationPageTest@2555fff0]" started-at="2025-06-18T20:08:39 IST" name="setUp" finished-at="2025-06-18T20:08:45 IST" duration-ms="5793" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.E_Commerce.tests.RegistrationPageTest@63fd4873]" started-at="2025-07-07T20:41:20 IST" name="setUp" finished-at="2025-07-07T20:41:28 IST" duration-ms="8323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Register(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.E_Commerce.tests.RegistrationPageTest@2555fff0]" started-at="2025-06-18T20:08:46 IST" name="Register" data-provider="RegistrationData" finished-at="2025-06-18T20:08:48 IST" duration-ms="2462" status="PASS">
+        <test-method signature="Register(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.E_Commerce.tests.RegistrationPageTest@63fd4873]" started-at="2025-07-07T20:41:29 IST" name="Register" data-provider="RegistrationData" finished-at="2025-07-07T20:41:31 IST" duration-ms="2255" status="PASS">
           <params>
             <param index="0">
               <value>

@@ -13,7 +13,7 @@ public class RegistrationPageTest extends HelperClass{
   
   @DataProvider
   public Object[][] RegistrationData() throws IOException{
-	  String FilePath = "src\\test\\ resources\\RegistrationData.xlsX";
+	  String FilePath = "src\\test\\ resources\\RegistrationData.xlsx";
 	  String SheetName = "Sheet1";
 	  
 	  return ExcelUtils.getExcelData(FilePath, SheetName);
@@ -23,9 +23,9 @@ public class RegistrationPageTest extends HelperClass{
   
   @Test(dataProvider = "RegistrationData")
   public void Register(String Gender, String FirstName, String LastName, String Email, String Password, String ConfirmPassword) {
-	  RegistrationPage Register = new RegistrationPage(driver); 
+	  RegistrationPage RegisterPage = new RegistrationPage(driver); 
 	  
-	  Register.Register(Gender, FirstName, LastName, Email, Password, ConfirmPassword);
+	  RegisterPage.Register(Gender, FirstName, LastName, uniqueEmail , Password, ConfirmPassword);
   
   }
 }

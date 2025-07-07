@@ -1,6 +1,8 @@
 package com.E_Commerce.Utils;
 
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Properties;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,6 +19,10 @@ public class HelperClass {
 	protected WebDriver driver;
 	public final static int TIMEOUT =5;
 	protected Properties prop;
+	DateTimeFormatter Date = DateTimeFormatter.ofPattern("ddmmyyyyHHmmss");
+	String timestamp = LocalDateTime.now().format(Date);
+	protected String uniqueEmail ="Ecomtest"+timestamp+"@gmail.com";
+	
 	
 
     @BeforeClass
@@ -33,7 +39,7 @@ public class HelperClass {
         driver.get(prop.getProperty("url"));
     }
 
-//    @AfterClass
+  // @AfterClass
     public void tearDown() {
         if (driver != null) {
             driver.quit();
