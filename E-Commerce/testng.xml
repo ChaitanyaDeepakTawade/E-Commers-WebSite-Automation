@@ -3,8 +3,11 @@
 <suite name="Suite">
   <listeners>
         <listener class-name="com.E_Commerce.listeners.listeners" />
-    </listeners>
-  <test thread-count="5" name="Test">
+        <listener class-name="com.E_Commerce.listeners.RetryListener"/>
+  </listeners>
+    
+  <test thread-count="5" name="Chrome">
+   <parameter  name ="browser" value="chrome"/>
     <classes>
       <class name="com.E_Commerce.Utils.HelperClass"/>
       <class name="com.E_Commerce.AppTest"/>
@@ -12,4 +15,15 @@
       <class name="com.E_Commerce.tests.LoginPageTest"/>
     </classes>
   </test> <!-- Test -->
+  <test thread-count="5" name="Edge">
+    <parameter  name ="browser" value="edge"/>
+    <classes>
+      <class name="com.E_Commerce.Utils.HelperClass"/>
+      <class name="com.E_Commerce.AppTest"/>
+      <class name="com.E_Commerce.tests.RegistrationPageTest"/>
+      <class name="com.E_Commerce.tests.LoginPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
 </suite> <!-- Suite -->
