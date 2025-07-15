@@ -6,10 +6,8 @@ import org.openqa.selenium.WebDriver;
 import com.E_Commerce.Utils.HelperClass;
 
 public class RegistrationPage{
-
-	WebDriver driver;
 	
-	private By RegisterURL = By.linkText("Register");
+	private By RegisterURL = By.xpath("//*[@href=\"/register\"]");
 	private By Gender = By.id("gender-male");
 	private By FirstName = By.id("FirstName");
 	private By LastName = By.id("LastName");
@@ -17,23 +15,40 @@ public class RegistrationPage{
 	private By Password = By.id("Password");
 	private By ConfirmPassword = By.id("ConfirmPassword");
 	private By registerBtn = By.id("register-button");
+	private By SucessMsg = By.className("result");
 	
-	public RegistrationPage(WebDriver driver){
-		this.driver=driver;
+	protected By getRegisterURL() {
+		return RegisterURL;
+	}
+	protected By getGender() {
+		return Gender;
+	}
+	protected By getFirstName() {
+		return FirstName;
+	}
+	protected By getLastName() {
+		return LastName;
+	}
+	protected By getEmail() {
+		return Email;
+	}
+	protected By getPassword() {
+		return Password;
+	}
+	protected By getConfirmPassword() {
+		return ConfirmPassword;
+	}
+	protected By getRegisterBtn() {
+		return registerBtn;
+	}
+	protected By getSucessMsg() {
+		return SucessMsg;
 	}
 	
-	public void Register(String Gender, String FirstName, String LastName, String Email, String Password, String ConfirmPassword){
-		
-		driver.findElement(this.RegisterURL).click();
-		driver.findElement(this.Gender).click();
-		driver.findElement(this.FirstName).sendKeys(FirstName);
-		driver.findElement(this.LastName).sendKeys(LastName);
-		driver.findElement(this.Email).sendKeys(Email);
-		driver.findElement(this.Password).sendKeys(Password);
-		driver.findElement(this.ConfirmPassword).sendKeys(ConfirmPassword);
-		driver.findElement(registerBtn).click();
-		
-	}
+	
+	
+	
+	
 	
 	
 }

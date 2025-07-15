@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.E_Commerce.Actions.LoginPageAction;
 import com.E_Commerce.Pages.LoginPage;
 import com.E_Commerce.Utils.HelperClass;
 
@@ -19,15 +20,16 @@ public class LoginPageTest extends HelperClass {
 	@Test
     public void login() throws FileNotFoundException, IOException {
 		
-		LoginPage Login = new LoginPage(driver);
+		
+		LoginPageAction LoginAction = new LoginPageAction(driver);
 		
 		prop = new Properties();
 	    prop.load(new FileInputStream("src\\test\\ resources\\config.properties"));
        
-		Login.login( uniqueEmail ,prop.getProperty("Password") );
-
+	    LoginAction.login( uniqueEmail ,prop.getProperty("Password") );
+        
         String title = driver.getTitle();
         
-        Assert.assertTrue(title.contains("Demo Web Shop. Login"), "Title doesn't contain ChatGPT");
+        Assert.assertTrue(title.contains("Demo Web Shop. Login"), "Title doesn't Match");
     }
 }
