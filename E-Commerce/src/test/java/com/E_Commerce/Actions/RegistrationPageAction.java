@@ -1,19 +1,21 @@
 package com.E_Commerce.Actions;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import com.E_Commerce.Pages.RegistrationPage;
 
 public class RegistrationPageAction extends RegistrationPage {
 	
 	WebDriver driver;
+	
     public RegistrationPageAction(WebDriver driver) {
 		this.driver = driver;
 		
 	}
 
      public void Register(String Gender, String FirstName, String LastName, String Email, String Password, String ConfirmPassword){
- 		
+        
  		driver.findElement(getRegisterURL()).click();
  		driver.findElement(getGender()).click();
  		driver.findElement(getFirstName()).sendKeys(FirstName);
@@ -24,6 +26,10 @@ public class RegistrationPageAction extends RegistrationPage {
  		driver.findElement(getRegisterBtn()).click();
  	}
      
-
+     public void RegisterMsgValidation() {
+    	 
+    	String registerSucessMsg = driver.findElement(getSucessMsg()).getText();    
+        Assert.assertEquals(registerSucessMsg,"Sucess");
+     }
 
 }

@@ -1,0 +1,27 @@
+2025-10-16 12:49:21 DEBUG [main] TestNG - suiteXmlPath: "C:\Project\E-Commers-WebSite-Automation\Ecom2\testng.xml"
+2025-10-16 12:49:21 INFO  [main] Utils - [TestNG] Running:
+  C:\Project\E-Commers-WebSite-Automation\Ecom2\testng.xml
+
+2025-10-16 12:49:21 INFO  [main] listeners - Test Suite Started: Test
+2025-10-16 12:49:32 DEBUG [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-10-16 12:49:32 DEBUG [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-10-16 12:49:32 DEBUG [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-10-16 12:49:34 INFO  [main] listeners - Test Started: Register
+2025-10-16 12:49:34 INFO  [main] RegistrationPageTest - Registration start.....!
+2025-10-16 12:49:38 INFO  [main] listeners - Test Passed: Register
+2025-10-16 12:49:38 INFO  [main] listeners - Test Started: Register
+2025-10-16 12:49:38 INFO  [main] RegistrationPageTest - Registration start.....!
+2025-10-16 12:49:45 INFO  [main] listeners - Test Passed: Register
+2025-10-16 12:49:46 INFO  [main] listeners - Test Started: Register
+2025-10-16 12:49:46 INFO  [main] RegistrationPageTest - Registration start.....!
+2025-10-16 12:49:50 INFO  [main] listeners - Test Passed: Register
+2025-10-16 12:49:50 INFO  [main] listeners - Test Started: Register
+2025-10-16 12:49:50 INFO  [main] RegistrationPageTest - Registration start.....!
+2025-10-16 12:49:53 INFO  [main] listeners - Test Passed: Register
+2025-10-16 12:49:53 INFO  [main] listeners - Test Started: Register
+2025-10-16 12:49:53 INFO  [main] RegistrationPageTest - Registration start.....!
+2025-10-16 12:49:57 INFO  [main] listeners - Test Passed: Register
+2025-10-16 12:49:57 INFO  [main] listeners - Test Started: Register
+2025-10-16 12:49:57 INFO  [main] RegistrationPageTest - Registration start.....!
+2025-10-16 12:50:00 INFO  [main] listeners - Test Passed: Register
+2025-10-16 12:50:00 INFO  [main] listeners - Test Suite Finished: Test

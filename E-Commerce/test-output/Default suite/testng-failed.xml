@@ -6,6 +6,7 @@
       <class name="com.E_Commerce.tests.RegistrationPageTest">
         <methods>
           <include name="Register"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.E_Commerce.tests.RegistrationPageTest -->

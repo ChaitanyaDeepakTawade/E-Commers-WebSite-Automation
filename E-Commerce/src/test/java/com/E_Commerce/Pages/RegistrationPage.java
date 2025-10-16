@@ -7,7 +7,7 @@ import com.E_Commerce.Utils.HelperClass;
 
 public class RegistrationPage{
 	
-	private By RegisterURL = By.xpath("//*[@href=\"/register\"]");
+	private By RegisterURL = By.className("ico-register");
 	private By Gender = By.id("gender-male");
 	private By FirstName = By.id("FirstName");
 	private By LastName = By.id("LastName");

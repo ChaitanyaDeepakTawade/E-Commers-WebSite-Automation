@@ -7,6 +7,8 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -19,31 +21,47 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.E_Commerce.Utils.ExtentTestManager;
 import com.E_Commerce.Utils.HelperClass;
+import com.E_Commerce.Utils.Log;
 
 public class listeners implements ITestListener {
 	
+	private static final Logger logger = (Logger) LogManager.getLogger(listeners.class);
+	
     @Override
     public void onStart(ITestContext context) {
-        System.out.println("Test Suite Started: " + context.getName());
+    	
+    	logger.info("Test Suite Started: " + context.getName());
+    	
     }
 
     @Override
     public void onFinish(ITestContext context) {
+      	logger.info("Test Suite Finished: " + context.getName());
+   
         ExtentTestManager.endTest();
     }
 
     @Override
     public void onTestStart(ITestResult result) {
+    	
+    	logger.info("Test Started: " + result.getMethod().getMethodName());
         ExtentTestManager.startTest(result.getMethod().getMethodName());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        ExtentTestManager.getTest().log(Status.PASS, "Test Passed");
+    
+    	
+    	logger.info("Test Passed: " + result.getMethod().getMethodName());
+        
+    	ExtentTestManager.getTest().log(Status.PASS, "Test Passed");
+        
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
+    
+    	logger.error("Test Failed: " + result.getMethod().getMethodName(), result.getThrowable());
     	
         ExtentTestManager.getTest().log(Status.FAIL, "Test Failed: " + result.getThrowable());
         String base64 = ((TakesScreenshot) HelperClass.getDriver()).getScreenshotAs(OutputType.BASE64);
