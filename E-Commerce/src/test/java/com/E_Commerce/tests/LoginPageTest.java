@@ -24,7 +24,7 @@ public class LoginPageTest extends HelperClass {
 		LoginPageAction LoginAction = new LoginPageAction(driver);
 		
 		prop = new Properties();
-	    prop.load(new FileInputStream("src\\test\\ resources\\config.properties"));
+	    prop.load(new FileInputStream("src\\test\\resources\\config.properties"));
        
 	    LoginAction.login( uniqueEmail ,prop.getProperty("Password") );
         

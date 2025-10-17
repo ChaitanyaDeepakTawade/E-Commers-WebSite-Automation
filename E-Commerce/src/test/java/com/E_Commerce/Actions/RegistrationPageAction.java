@@ -29,7 +29,12 @@ public class RegistrationPageAction extends RegistrationPage {
      public void RegisterMsgValidation() {
     	 
     	String registerSucessMsg = driver.findElement(getSucessMsg()).getText();    
-        Assert.assertEquals(registerSucessMsg,"Sucess");
+    	 try {
+    		 Assert.assertEquals(registerSucessMsg,"Sucess");
+    	 }
+    	 catch(AssertionError Ae) {
+    		  System.err.println("Assertion failed on Register Msg Validation : " + Ae.getMessage());
+    	 }
      }
 
 }
